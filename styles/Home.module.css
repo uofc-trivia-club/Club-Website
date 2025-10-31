@@ -1,0 +1,161 @@
+/* Base shared styles */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Base section styles - shared across components */
+.section {
+  padding: 40px 20px; /* Reduced from 80px top padding to 40px */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 1s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0 0 30px 0;
+}
+
+/* Shared animations for all sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Shared media queries */
+@media (max-width: 768px) {
+  .section {
+    text-align: center;
+  }
+}
+
+/* Shared button styles */
+.primaryButton {
+  background-color: #d11616;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: #a21212;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #d11616;
+  border: 2px solid #d11616;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #d11616;
+  color: white;
+}
+
+/* Shared list styles */
+.bulletList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: fit-content;
+  text-align: left;
+}
+
+.bulletList li {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.bulletList li::before {
+  content: "•";
+  position: absolute;
+  left: 0.5em;
+}
+
+/* Inline bullet list for horizontal display */
+.inlineBulletList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.inlineBulletList li {
+  position: relative;
+  padding: 0 12px;
+  margin: 0 5px 5px 0;
+  display: inline-block;
+}
+
+.inlineBulletList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.listHeading {
+  font-weight: 600;
+}
+
+/* Two-column bullet list for executive positions */
+.twoColumnList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  max-width: 100%;
+}
+
+.twoColumnList li {
+  position: relative;
+  padding-left: 1.5em;
+  text-align: left;
+}
+
+.twoColumnList li::before {
+  content: "•";
+  position: absolute;
+  left: 0.5em;
+}

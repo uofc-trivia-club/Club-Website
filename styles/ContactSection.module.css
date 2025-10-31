@@ -1,0 +1,233 @@
+.contactSection {
+  background-color: #dcdcdc4a;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contactInfo, 
+.contactForm {
+  flex: 1;
+}
+
+.contactInfo {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.contactInfo h3, 
+.contactForm h3 {
+  color: #d11616;
+  margin-bottom: 20px;
+  font-family: inherit; /* Use the same font as other sections */
+}
+
+/* Social Media Section Styles */
+.socialMediaContainer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.socialMediaContainer h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  justify-content: center; /* Center the social media icons */
+}
+
+.socialIconLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.socialIconLink:hover {
+  transform: translateY(-5px);
+}
+
+.socialIconCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.socialIcon {
+  font-size: 24px;
+  display: flex; /* Ensure icon is centered */
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram {
+  background: white;
+  color: #E1306C;
+}
+.socialIconLink:hover .instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+}
+
+.discord {
+  background: white;
+  color: #5865F2;
+}
+.socialIconLink:hover .discord {
+  background-color: #5865F2;
+  color: white;
+}
+
+.github {
+  background: white;
+  color: #333;
+}
+.socialIconLink:hover .github {
+  background-color: #333;
+  color: white;
+}
+
+.tiktok {
+  background: white;
+  color: #000;
+}
+.socialIconLink:hover .tiktok {
+  background: linear-gradient(45deg, #25F4EE, #000000, #FE2C55);
+  color: white;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.formGroup input, 
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.formMessage {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #e7f3e7;
+  border-radius: 4px;
+  color: #2e7d32;
+}
+
+.submitButton {
+  background-color: #d11616;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #a21212;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+  .contactContainer {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+  
+  .contactInfo {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  
+  .socialIconCircle {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .socialIcon {
+    font-size: 20px;
+  }
+}
+
+.section.visible .contactDetail:nth-child(1) {
+  animation: fadeInUp 0.8s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.section.visible .contactDetail:nth-child(2) {
+  animation: fadeInUp 0.8s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.section.visible .contactDetail:nth-child(3) {
+  animation: fadeInUp 0.8s ease-out 0.7s forwards;
+  opacity: 0;
+}
+
+.section.visible .formGroup:nth-child(1) {
+  animation: fadeInUp 0.6s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.section.visible .formGroup:nth-child(2) {
+  animation: fadeInUp 0.6s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.section.visible .formGroup:nth-child(3) {
+  animation: fadeInUp 0.6s ease-out 0.7s forwards;
+  opacity: 0;
+}
+
+.section.visible .submitButton {
+  animation: fadeInUp 0.6s ease-out 0.9s forwards;
+  opacity: 0;
+}
+
+.formError {
+  background: #fdeaea;
+  color: #b71c1c;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
