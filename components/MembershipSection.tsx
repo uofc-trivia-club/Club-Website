@@ -115,7 +115,7 @@ const MembershipSection: React.FC = () => {
       name: "Matthias",
       position: "Junior Exec",
       imageUrl: "/assets/matthias.png",
-      bio: "Hey! I'm a 2nd year Comp Sci student that takes too many photos. In my free time, I enjoy watching F1, combat sports, and a tad bit of hockey. When night skies are clear, I like through my telescope."
+      bio: "Hey! I'm a 2nd year Comp Sci student that takes too many photos. In my free time, I enjoy watching F1, combat sports, and a tad bit of hockey. When night skies are clear, I like looking through my telescope."
     },
     {
       name: "Trisha",
