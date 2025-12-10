@@ -31,6 +31,21 @@ const SponsorshipPage: React.FC = () => {
           </section>
 
           <section className="mb-12">
+            <h2 className="text-2xl font-semibold mb-4">Sponsorship Package</h2>
+            <p className="mb-4">
+              Download our comprehensive sponsorship package to learn more about partnership opportunities and benefits.
+            </p>
+            <a 
+              href="/assets/documents/sponsorship-package.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Download Sponsorship Package (PDF)
+            </a>
+          </section>
+
+          <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
             <p>Interested in sponsorship? Reach out to discuss partnership opportunities.</p>
           </section>
