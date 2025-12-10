@@ -1,21 +1,34 @@
-import MainLayout from '../components/layouts/MainLayout';
-import { NextPageWithLayout } from '../types/page';
+import Footer from '../components/Footer';
+import Head from 'next/head';
 import React from 'react';
+import SubpageHeader from '../components/SubpageHeader';
+import styles from '../styles/SubpageLayout.module.css';
 
-const NewsletterPage: NextPageWithLayout = () => {
+const NewsletterPage: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8">Newsletter</h1>
-      <p className="text-lg mb-6">
-        Stay updated with our latest trivia insights, club updates, and community content.
-      </p>
-      {/* Add your newsletter content, signup form, or archive here */}
+    <div className={styles.pageContainer}>
+      <Head>
+        <title>Newsletter | UCalgary Trivia Club</title>
+        <meta name="description" content="Stay updated with our latest trivia insights, club updates, and community content." />
+      </Head>
+
+      <SubpageHeader title="Newsletter" />
+      
+      <main className={styles.mainContent}>
+        <div className={styles.contentWrapper}>
+          <p className="text-lg mb-6">
+            Stay updated with our latest trivia insights, club updates, and community content.
+          </p>
+          
+          <div className={styles.placeholder}>
+            <p>Newsletter content coming soon!</p>
+          </div>
+        </div>
+      </main>
+      
+      <Footer />
     </div>
   );
-};
-
-NewsletterPage.getLayout = (page: React.ReactElement) => {
-  return <MainLayout>{page}</MainLayout>;
 };
 
 export default NewsletterPage;
