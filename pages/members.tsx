@@ -53,57 +53,52 @@ const MembersPage: React.FC = () => {
     },
     {
       name: "Serenity",
-      position: "Junior Exec",
+      position: "Junior VP External",
       imageUrl: "/assets/serenity.jpg",
-      bio: "Hi!!!  I am Serenity and I am currently in my second year as a communications student.  I am very very bad at trivia…. Yayyy! ( ;´꒳`;)"    },
-    {
-      name: "Caitlyn",
-      position: "Junior Exec",
-      imageUrl: "/assets/caitlyn.jpg",
-      bio: "Hey! It's Caitlyn. I'm a second year biomedical engineering major and suck at trivia! So if you're scared to join because you lack experience and knowledge, don't worry, we can learn together! Come talk to me about anything! Games, music, TV, math... we can nerd out together! Looking forward to see you around."
+      bio: "Hi!!!  I am Serenity and I am currently in my second year as a communications student.  I am very very bad at trivia…. Yayyy! ( ;´꒳`;)"
     },
     {
       name: "Matthew",
-      position: "Junior Exec",
+      position: "Junior VP Events",
       imageUrl: "/assets/matthew.jpg",
       bio: "Hello Trivia People, my name is Matthew Prior and I am a first year Poli Sci student with 2 minors, History and Security Studies. I have played trivia competitively throughout Highschool, being on the Bishop Carroll High Reach Team for all 3 years, in my grade 12 year we made nationals and placed 5th in the country. Hope to make new friends and learn more facts with everyone."
     },
     {
       name: "Klevis",
-      position: "Junior Exec",
+      position: "Junior VP Events",
       imageUrl: "/assets/klevis.JPG",
       bio: "Hey, I'm Klevis. I'm a 5th year Business Tech student. I was drawn to trivia club because like Guess the song/flag/animal and kahoot. (My specialty is 2010s pop)"
     },
     {
       name: "Ehsan",
-      position: "Junior Exec",
+      position: "Junior VP Events",
       imageUrl: "/assets/ehsan.jpg",
       bio: "I'm Ehsan, a 2nd year biological sciences student who loves learning facts for the sake of seeming intelligent"
     },
     {
       name: "Drew",
-      position: "Junior Exec",
+      position: "JJunior VP Events",
       imageUrl: "/assets/drew.jpeg",
       bio: "Hi there, my names Drew, and I'm a third year biochemistry student as well as a junior executive of the UofC trivia club! I embrace life as a nerd and that includes having random knowledge only useful in the trivia setting. My passions include taking care of animals, reading detective fiction, and drawing. Some of my greatest trivia knowledge is about video games, the 1990's and its pop culture, and science. Can't wait to meet you at one of our trivia events!"
     },
     {
       name: "Matthias",
-      position: "Junior Exec",
+      position: "Junior VP Marketing",
       imageUrl: "/assets/matthias.png",
       bio: "Hey! I'm a 2nd year Comp Sci student that takes too many photos. In my free time, I enjoy watching F1, combat sports, and a tad bit of hockey. When night skies are clear, I like looking through my telescope."
     },
     {
-      name: "Trisha",
-      position: "Junior Exec",
-      imageUrl: "/assets/trisha.jpg",
-      bio: "I'm Trisha and I'm in nursing! I love reading webtoons, hitting the gym, and trivia!"
-    },
-    {
       name: "Sakura",
-      position: "Junior Exec",
+      position: "Junior VP Marketing",
       imageUrl: "/assets/sakura.png",
       bio: "Full-time IR student by day, full-time stardew valley gamer by night."
     },
+    {
+      name: "Saihaan",
+      position: "Junior VP Finance",
+      imageUrl: "/assets/saihaan.jpg",
+      bio: "Hello! My name is Saihaan and I'm a 2nd year CS student!I like playing/watching/arguing soccer, I like coding (sort of have to), and I really enjoy learning about any facts in the world (even though I often forget them quickly.Excited to meet everyone",
+    }
   ];
 
   return (
