@@ -104,5 +104,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; /* Changed from fixed 50px height */
+  height: auto;
+  width: 100%;
 }
