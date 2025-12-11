@@ -30,9 +30,9 @@ const OtherSection: React.FC = () => {
 
   const links = [
     { 
-      name: "Blog", 
-      path: "/blog", 
-      description: "Access our official blog featuring trivia insights, club updates, and community content." 
+      name: "Newsletter", 
+      path: "/newsletter", 
+      description: "Access our official newsletter featuring trivia insights, club updates, and community content." 
     },
     { 
       name: "Resources", 
@@ -45,11 +45,6 @@ const OtherSection: React.FC = () => {
       description: "Browse photographs from our past competitions, social gatherings, and campus events." 
     },
     { 
-      name: "Events", 
-      path: "/events", 
-      description: "View our upcoming schedule of trivia competitions, guest speakers, and social gatherings." 
-    },
-    { 
       name: "Yippee", 
       path: "/yippee", 
       description: "Experience our student-developed trivia application designed to test and expand your knowledge." 
@@ -58,6 +53,11 @@ const OtherSection: React.FC = () => {
       name: "DailiesBot", 
       path: "/dailiesbot", 
       description: "Implement our Discord bot to track scores and manage daily trivia competitions for your server." 
+    },
+    { 
+      name: "Sponsorship", 
+      path: "/sponsorship", 
+      description: "Partner with us to support trivia competitions and events while gaining visibility within our community." 
     }
   ];
 
