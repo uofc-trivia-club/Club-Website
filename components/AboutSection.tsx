@@ -35,7 +35,7 @@ const AboutSection: React.FC = () => {
         <div className={aboutStyles.aboutContent}>
           <h3>Our Mission</h3>
           <p>
-            Founded in 2024 by a group of passionate trivia lovers, and officially recognized as a club in 2025, the University of Calgary Trivia Club 
+            Started officially in 2025 by a group of passionate trivia enthusiasts, the University of Calgary Trivia Club 
             (UCTC) is where curiosity meets community. We're here to bring together students who love testing their knowledge, 
             discovering new facts, and celebrating the thrill of trivia in all its forms.
           </p>

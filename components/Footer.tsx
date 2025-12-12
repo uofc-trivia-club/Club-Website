@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p>© 2024-{new Date().getFullYear()} University of Calgary Trivia Club. All rights reserved.</p>
+        <p>© 2025-{new Date().getFullYear()} University of Calgary Trivia Club. All rights reserved.</p>
       </div>
     </footer>
   );
