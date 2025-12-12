@@ -93,12 +93,12 @@ const TriviaSection: React.FC = () => {
     // UCalgary Trivia Club Trivia
     [
       {
-        questionText: 'When was the UCalgary Trivia Club founded?',
+        questionText: 'What year did the University of Calgary Trivia Club become an official club (SU-registered)?',
         answerOptions: [
           { answerText: '2022', isCorrect: false },
           { answerText: '2023', isCorrect: false },
-          { answerText: '2024', isCorrect: true },
-          { answerText: '2025', isCorrect: false },
+          { answerText: '2024', isCorrect: false },
+          { answerText: '2025', isCorrect: true },
         ],
       },
       {
