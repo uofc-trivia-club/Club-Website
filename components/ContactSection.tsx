@@ -117,19 +117,20 @@ const ContactSection: React.FC = () => {
             Stay updated on upcoming events, trivia questions, and club activities!
           </p>
           <div className={contactStyles.socialLinks}>
-            <a href="#" className={contactStyles.socialIconLink} aria-label="Instagram">
+
+            <a href="https://www.instagram.com/trivia.ucalgary/" className={contactStyles.socialIconLink} aria-label="Instagram">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.instagram}`}>
                 <FontAwesomeIcon icon={faInstagram} className={contactStyles.socialIcon} />
               </div>
               <span>Instagram</span>
             </a>
-            <a href="#" className={contactStyles.socialIconLink} aria-label="Discord">
+            <a href="https://discord.gg/sWmRgn9w2n" className={contactStyles.socialIconLink} aria-label="Discord">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.discord}`}>
                 <FontAwesomeIcon icon={faDiscord} className={contactStyles.socialIcon} />
               </div>
               <span>Discord</span>
             </a>
-            <a href="#" className={contactStyles.socialIconLink} aria-label="GitHub">
+            <a href="https://github.com/uofc-trivia-club" className={contactStyles.socialIconLink} aria-label="GitHub">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.github}`}>
                 <FontAwesomeIcon icon={faGithub} className={contactStyles.socialIcon} />
               </div>
