@@ -186,7 +186,7 @@ const MembershipSection: React.FC = () => {
                   rel="noopener noreferrer"
                 >
                   <button className={styles.primaryButton}>
-                    Open On Google Maps
+                    Open In Google Maps
                   </button>
                 </a>
               </div>
