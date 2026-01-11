@@ -42,36 +42,38 @@ const CommunityPartnersSection: React.FC = () => {
       <p className={partnerStyles.subtitle}>
         Support the places that support our trivia community!
       </p>
-      
+
     {/* GN Cafe Partner Card */}
-    <div className={partnerStyles.partnerCard}>
-    <h3 className={partnerStyles.partnerTitle}>GN Cafe</h3>
+    <div className={partnerStyles.partnersContainer}>
+        <div className={partnerStyles.partnerCard}>
+            <h3 className={partnerStyles.partnerTitle}>GN Cafe</h3>
 
-    <div className={partnerStyles.partnerLogoWrap}>
-        <Image
-        src="/assets/GN_Cafe_Logo.png"
-        alt="GN Cafe"
-        width={200}
-        height={200}
-        className={partnerStyles.partnerLogo}
-        />
-    </div>
+            <div className={partnerStyles.partnerLogoWrap}>
+                <Image
+                src="/assets/GN_Cafe_Logo.png"
+                alt="GN Cafe"
+                width={200}
+                height={200}
+                className={partnerStyles.partnerLogo}
+                />
+            </div>
 
-    <p className={partnerStyles.partnerText}>
-        Get <strong>10% off</strong> when you show your membership.
-    </p>
+            <p className={partnerStyles.partnerText}>
+                Get <strong>10% off</strong> when you show your membership.
+            </p>
 
-    <div className={partnerStyles.partnerButtonWrap}>
-        <a
-        href="https://maps.app.goo.gl/yzK78282MPFkVumf6"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-        <button className={partnerStyles.partnerContainerButton}>
-            Open In Google Maps
-        </button>
-        </a>
-    </div>
+            <div className={partnerStyles.partnerButtonWrap}>
+                <a
+                href="https://maps.app.goo.gl/yzK78282MPFkVumf6"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <button className={partnerStyles.partnerContainerButton}>
+                    Open In Google Maps
+                </button>
+                </a>
+            </div>
+        </div>
     </div>
 
     </section>
