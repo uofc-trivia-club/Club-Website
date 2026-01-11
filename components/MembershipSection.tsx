@@ -143,58 +143,6 @@ const MembershipSection: React.FC = () => {
           </div>
         </div>
       </div>
-
-       {/* Membership Perks Section */}
-        {/* GN Cafe*/}
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
-          <h2>Membership Perks</h2>
-          <p>Enjoy benefits and perks as a member!</p>
-
-          <div
-            className={memberStyles.membersContainer}
-            style={{ marginTop: '20px', justifyContent: 'center' }}
-          >
-            <div className={memberStyles.memberCard}>
-              <div
-                className={memberStyles.cardContent}
-                style={{ textAlign: 'center' }}
-              >
-                <h3>GN Cafe</h3>
-
-                <div style={{ margin: '20px 0' }}>
-                  <Image
-                    src="/assets/GN_Cafe_Logo.png"
-                    alt="GN Cafe"
-                    width={200}
-                    height={200}
-                    style={{
-                      borderRadius: '16px',
-                      objectFit: 'cover',
-                    }}
-                  />
-                </div>
-
-                <p style={{ margin: '0 auto', maxWidth: '260px' }}>
-                  Get <strong>10% off</strong> when you show your membership.
-                </p>
-              </div>
-
-              <div className={memberStyles.buttonContainer}>
-                <a
-                  href="https://maps.app.goo.gl/yzK78282MPFkVumf6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className={styles.primaryButton}>
-                    Open In Google Maps
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-      </div>
-
-
       
       {/* Current Members Section */}
       <div style={{ textAlign: 'center', marginTop: '50px' }}>
