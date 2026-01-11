@@ -42,6 +42,7 @@ const CommunityPartnersSection: React.FC = () => {
       <p className={partnerStyles.subtitle}>
         Support the places that support our trivia community!
       </p>
+      
     {/* GN Cafe Partner Card */}
     <div className={partnerStyles.partnerCard}>
     <h3 className={partnerStyles.partnerTitle}>GN Cafe</h3>
