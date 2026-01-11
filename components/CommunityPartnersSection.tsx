@@ -21,10 +21,14 @@ const CommunityPartnersSection: React.FC = () => {
       });
     }, observerOptions);
 
-    if (sectionRef.current) observer.observe(sectionRef.current);
+    if (sectionRef.current){
+         observer.observe(sectionRef.current);
+    }
 
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (sectionRef.current){
+        observer.unobserve(sectionRef.current);
+      } 
     };
   }, []);
 
