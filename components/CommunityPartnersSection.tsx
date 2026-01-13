@@ -59,7 +59,7 @@ const CommunityPartnersSection: React.FC = () => {
             </div>
 
             <p className={partnerStyles.partnerText}>
-                Get <strong>10% off</strong> when you show your membership.
+                Get <strong>10% off</strong> when you show your membership card.
             </p>
 
             <div className={partnerStyles.partnerButtonWrap}>
