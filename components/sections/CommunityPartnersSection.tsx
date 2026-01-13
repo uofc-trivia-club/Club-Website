@@ -94,10 +94,19 @@ const CommunityPartnersSection: React.FC = () => {
     {/* GN Cafe Card */}
     <CommunityPartnerCard 
       title='GN Cafe' 
-      imgSrc='/assets/GN_Cafe_Logo.png'
+      imgSrc='/assets/partnerLogos/GN_Cafe_Logo.png'
       imgAlt='GN Cafe logo'
       discount='10% off'
       mapsLink='https://maps.app.goo.gl/yzK78282MPFkVumf6'
+    />
+
+    {/* Royal Tea House Card */}
+    <CommunityPartnerCard 
+      title='Royal Tea House' 
+      imgSrc='/assets/partnerLogos/Royal_Tea_House_Logo_temp.jpg'
+      imgAlt='Royal Tea House logo'
+      discount='10% off'
+      mapsLink='https://maps.app.goo.gl/26KpyGj2GrNpgxjs7'
     />
 
     </section>
