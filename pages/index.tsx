@@ -7,6 +7,7 @@ import OtherSection from '../components/OtherSection';
 import ParticleBackground from '../components/ParticleBackground';
 import React from 'react';
 import TriviaSection from '../components/TriviaSection';
+import CommunityPartnersSection from '../components/CommunityPartnersSection';
 import particleStyles from '../styles/ParticleBackground.module.css';
 import styles from '../styles/Home.module.css';
 
@@ -25,6 +26,7 @@ const Home: React.FC = () => {
             <AboutSection />
             <MembershipSection />
             <TriviaSection />
+            <CommunityPartnersSection />
             <OtherSection />
             <FAQ />
             <ContactSection />

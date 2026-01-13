@@ -1,0 +1,108 @@
+.partnersSection {
+  background-color: #dcdcdc4a; 
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+.partnersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.partnerCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px 20px 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 380px;
+}
+
+.partnerCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.partnerTitle {
+  color: #d11616;
+  margin: 5px 0 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.partnerLogoWrap {
+  margin: 14px 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnerLogo {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.partnerText {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.partnerButtonWrap {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.partnerContainerButton {
+  background: #d11616;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.partnerContainerButton:hover {
+  background: #b31212;
+}
+
+.partnerContainerButton:focus-visible {
+  outline: 3px solid rgba(209, 22, 22, 0.35);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .partnersContainer {
+    gap: 35px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partnersContainer {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .partnersContainer {
+    gap: 40px;
+  }
+}
