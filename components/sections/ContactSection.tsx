@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { faDiscord, faGithub, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import contactStyles from '../styles/ContactSection.module.css';
+import contactStyles from '../../styles/ContactSection.module.css';
 import emailjs from 'emailjs-com';
-import styles from '../styles/Home.module.css';
+import styles from '../../styles/Home.module.css';
 
 const ContactSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
-import homeStyles from '../styles/HomeSection.module.css';
-import styles from '../styles/Home.module.css';
+import homeStyles from '../../styles/HomeSection.module.css';
+import styles from '../../styles/Home.module.css';
 
 const HomeSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);

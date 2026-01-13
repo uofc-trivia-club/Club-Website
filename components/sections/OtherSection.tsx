@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 
 import Link from 'next/link';
-import otherStyles from '../styles/OtherSection.module.css';
-import styles from '../styles/Home.module.css';
+import otherStyles from '../../styles/OtherSection.module.css';
+import styles from '../../styles/Home.module.css';
 
 const OtherSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
