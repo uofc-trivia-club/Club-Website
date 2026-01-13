@@ -4,6 +4,54 @@ import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 import partnerStyles from '../../styles/CommunityPartnersSection.module.css';
 
+interface CardProps {
+  title: string;
+  imgSrc: string;
+  imgAlt: string;
+  discount?: string;
+  customText?: string;
+  mapsLink: string;
+}
+
+function CommunityPartnerCard({ title, imgSrc, imgAlt, discount = "", customText = "", mapsLink }: CardProps) {
+  return (
+    <div className={partnerStyles.partnersContainer}>
+        <div className={partnerStyles.partnerCard}>
+            <h3 className={partnerStyles.partnerTitle}>{title}</h3>
+
+            <div className={partnerStyles.partnerLogoWrap}>
+                <Image
+                src={imgSrc}
+                alt={imgAlt}
+                width={200}
+                height={200}
+                className={partnerStyles.partnerLogo}
+                />
+            </div>
+
+            {discount && <p className={partnerStyles.partnerText}>
+              Get <span style={{ fontWeight: 'bold' }}>{discount}</span> when you show your membership card.
+            </p>}
+            {customText && <p className={partnerStyles.partnerText}>
+              {customText}
+            </p>}
+
+            <div className={partnerStyles.partnerButtonWrap}>
+                <a
+                href={mapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <button className={partnerStyles.partnerContainerButton}>
+                    Open In Google Maps
+                </button>
+                </a>
+            </div>
+        </div>
+    </div>
+  );
+}
+
 const CommunityPartnersSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -43,38 +91,14 @@ const CommunityPartnersSection: React.FC = () => {
         Support the places that support our trivia community!
       </p>
 
-    {/* GN Cafe Partner Card */}
-    <div className={partnerStyles.partnersContainer}>
-        <div className={partnerStyles.partnerCard}>
-            <h3 className={partnerStyles.partnerTitle}>GN Cafe</h3>
-
-            <div className={partnerStyles.partnerLogoWrap}>
-                <Image
-                src="/assets/GN_Cafe_Logo.png"
-                alt="GN Cafe"
-                width={200}
-                height={200}
-                className={partnerStyles.partnerLogo}
-                />
-            </div>
-
-            <p className={partnerStyles.partnerText}>
-                Get <strong>10% off</strong> when you show your membership card.
-            </p>
-
-            <div className={partnerStyles.partnerButtonWrap}>
-                <a
-                href="https://maps.app.goo.gl/yzK78282MPFkVumf6"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <button className={partnerStyles.partnerContainerButton}>
-                    Open In Google Maps
-                </button>
-                </a>
-            </div>
-        </div>
-    </div>
+    {/* GN Cafe Card */}
+    <CommunityPartnerCard 
+      title='GN Cafe' 
+      imgSrc='/assets/GN_Cafe_Logo.png'
+      imgAlt='GN Cafe logo'
+      discount='10% off'
+      mapsLink='https://maps.app.goo.gl/yzK78282MPFkVumf6'
+    />
 
     </section>
   );
