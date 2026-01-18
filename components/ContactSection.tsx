@@ -135,13 +135,14 @@ const ContactSection: React.FC = () => {
               </div>
               <span>GitHub</span>
             </a>
-            {/* No tiktok account yet*/}
+            {/* No tiktok account yet
             <a href="#" className={contactStyles.socialIconLink} aria-label="TikTok">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.tiktok}`}>
                 <FontAwesomeIcon icon={faTiktok} className={contactStyles.socialIcon} />
               </div>
               <span>TikTok</span>
             </a>
+            */}
           </div>
         </div>
         
