@@ -10,6 +10,7 @@ import TriviaSection from '../components/TriviaSection';
 import particleStyles from '../styles/ParticleBackground.module.css';
 import styles from '../styles/Home.module.css';
 
+
 const Home: React.FC = () => {
   return (
     <div className={styles.container}>
