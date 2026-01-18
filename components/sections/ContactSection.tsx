@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { faDiscord, faGithub, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import contactStyles from '../styles/ContactSection.module.css';
+import contactStyles from '../../styles/ContactSection.module.css';
 import emailjs from 'emailjs-com';
-import styles from '../styles/Home.module.css';
+import styles from '../../styles/Home.module.css';
 
 const ContactSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -117,19 +117,20 @@ const ContactSection: React.FC = () => {
             Stay updated on upcoming events, trivia questions, and club activities!
           </p>
           <div className={contactStyles.socialLinks}>
-            <a href="https://www.instagram.com/trivia.ucalgary/" target = "_blank" className={contactStyles.socialIconLink} aria-label="Instagram">
+
+            <a href="https://www.instagram.com/trivia.ucalgary/" className={contactStyles.socialIconLink} aria-label="Instagram">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.instagram}`}>
                 <FontAwesomeIcon icon={faInstagram} className={contactStyles.socialIcon} />
               </div>
               <span>Instagram</span>
             </a>
-            <a href="https://discord.gg/sWmRgn9w2n" target = "_blank" className={contactStyles.socialIconLink} aria-label="Discord">
+            <a href="https://discord.gg/sWmRgn9w2n" className={contactStyles.socialIconLink} aria-label="Discord">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.discord}`}>
                 <FontAwesomeIcon icon={faDiscord} className={contactStyles.socialIcon} />
               </div>
               <span>Discord</span>
             </a>
-            <a href="https://github.com/uofc-trivia-club" target  = "_blank" className={contactStyles.socialIconLink} aria-label="GitHub">
+            <a href="https://github.com/uofc-trivia-club" className={contactStyles.socialIconLink} aria-label="GitHub">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.github}`}>
                 <FontAwesomeIcon icon={faGithub} className={contactStyles.socialIcon} />
               </div>
