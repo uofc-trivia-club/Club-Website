@@ -15,38 +15,36 @@ interface CardProps {
 
 function CommunityPartnerCard({ title, imgSrc, imgAlt, discount = "", customText = "", mapsLink }: CardProps) {
   return (
-    <div className={partnerStyles.partnersContainer}>
-        <div className={partnerStyles.partnerCard}>
-            <h3 className={partnerStyles.partnerTitle}>{title}</h3>
+    <div className={partnerStyles.partnerCard}>
+        <h3 className={partnerStyles.partnerTitle}>{title}</h3>
 
-            <div className={partnerStyles.partnerLogoWrap}>
-                <Image
-                src={imgSrc}
-                alt={imgAlt}
-                width={200}
-                height={200}
-                className={partnerStyles.partnerLogo}
-                />
-            </div>
+        <div className={partnerStyles.partnerLogoWrap}>
+            <Image
+            src={imgSrc}
+            alt={imgAlt}
+            width={200}
+            height={200}
+            className={partnerStyles.partnerLogo}
+            />
+        </div>
 
-            {discount && <p className={partnerStyles.partnerText}>
-              Get <span style={{ fontWeight: 'bold' }}>{discount}</span> when you show your membership card.
-            </p>}
-            {customText && <p className={partnerStyles.partnerText}>
-              {customText}
-            </p>}
+        {discount && <p className={partnerStyles.partnerText}>
+          Get <span style={{ fontWeight: 'bold' }}>{discount}</span> when you show your membership card.
+        </p>}
+        {customText && <p className={partnerStyles.partnerText}>
+          {customText}
+        </p>}
 
-            <div className={partnerStyles.partnerButtonWrap}>
-                <a
-                href={mapsLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <button className={partnerStyles.partnerContainerButton}>
-                    Open In Google Maps
-                </button>
-                </a>
-            </div>
+        <div className={partnerStyles.partnerButtonWrap}>
+            <a
+            href={mapsLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <button className={partnerStyles.partnerContainerButton}>
+                Open In Google Maps
+            </button>
+            </a>
         </div>
     </div>
   );
@@ -91,23 +89,25 @@ const CommunityPartnersSection: React.FC = () => {
         Support the places that support our trivia community!
       </p>
 
-    {/* GN Cafe Card */}
-    <CommunityPartnerCard 
-      title='GN Cafe' 
-      imgSrc='/assets/partnerLogos/GN_Cafe_Logo.png'
-      imgAlt='GN Cafe logo'
-      discount='10% off'
-      mapsLink='https://maps.app.goo.gl/yzK78282MPFkVumf6'
-    />
+    <div className={partnerStyles.partnersContainer}>
+      {/* GN Cafe Card */}
+      <CommunityPartnerCard 
+        title='GN Cafe' 
+        imgSrc='/assets/partnerLogos/GN_Cafe_Logo.png'
+        imgAlt='GN Cafe logo'
+        discount='10% off'
+        mapsLink='https://maps.app.goo.gl/yzK78282MPFkVumf6'
+      />
 
-    {/* Royal Tea House Card */}
-    <CommunityPartnerCard 
-      title='Royal Tea House' 
-      imgSrc='/assets/partnerLogos/Royal_Tea_House_Logo_temp.jpg'
-      imgAlt='Royal Tea House logo'
-      discount='10% off'
-      mapsLink='https://maps.app.goo.gl/26KpyGj2GrNpgxjs7'
-    />
+      {/* Royal Tea House Card */}
+      <CommunityPartnerCard 
+        title='Royal Tea House' 
+        imgSrc='/assets/partnerLogos/Royal_Tea_House_Logo_temp.jpg'
+        imgAlt='Royal Tea House logo'
+        discount='10% off'
+        mapsLink='https://maps.app.goo.gl/26KpyGj2GrNpgxjs7'
+      />
+    </div>
 
     </section>
   );

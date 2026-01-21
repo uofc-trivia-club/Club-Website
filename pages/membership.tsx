@@ -2,7 +2,9 @@ import Footer from '../components/Footer';
 import Head from 'next/head';
 import React from 'react';
 import SubpageHeader from '../components/SubpageHeader';
+import CommunityPartnersSection from '../components/sections/CommunityPartnersSection';
 import styles from '../styles/SubpageLayout.module.css';
+import particleStyles from '../styles/ParticleBackground.module.css';
 
 const MembershipPage: React.FC = () => {
   return (
@@ -26,8 +28,11 @@ const MembershipPage: React.FC = () => {
             <ul className="list-disc list-inside space-y-2">
               <li><strong>Priority Registration:</strong> Early access to trivia competitions</li>
               <li><strong>Exclusive Events:</strong> Members-only trivia nights and socials</li>
-              <li><strong>Partner Discounts:</strong> Special offers from local businesses (coming soon!)</li>
+              <li><strong>Partner Discounts:</strong> Special offers from local businesses (see our Community Partners!)</li>
             </ul>
+            <div className={particleStyles.withParticles}>
+              <CommunityPartnersSection />
+            </div>
           </section>
 
           <section className="mb-12">
@@ -54,7 +59,6 @@ const MembershipPage: React.FC = () => {
               We're grateful for the support of our sponsors who help make our events and competitions possible. 
               Their contributions enable us to provide an engaging trivia experience for our community.
             </p>
-            <p className="text-sm italic">Sponsor list coming soon!</p>
           </section>
 
           <section className="mb-12 bg-blue-50 p-6 rounded-lg border-2 border-blue-200">
