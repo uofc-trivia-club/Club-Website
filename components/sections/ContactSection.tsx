@@ -103,7 +103,7 @@ const ContactSection: React.FC = () => {
           
           <div className={contactStyles.contactDetail}>
             <i className={contactStyles.icon}>📧</i>
-            <p>trebeksrejects@gmail.com</p>
+            <p>triviaucalgary@gmail.com</p>
           </div>
           
           <div className={contactStyles.contactDetail}>
