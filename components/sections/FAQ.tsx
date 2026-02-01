@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import faqStyles from '../styles/FAQ.module.css';
-import styles from '../styles/Home.module.css';
+import faqStyles from '../../styles/FAQ.module.css';
+import styles from '../../styles/Home.module.css';
 
 interface FAQItem {
   question: string;

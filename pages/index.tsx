@@ -1,14 +1,16 @@
-import AboutSection from '../components/AboutSection';
-import ContactSection from '../components/ContactSection';
-import FAQ from '../components/FAQ';
+import AboutSection from '../components/sections/AboutSection';
+import ContactSection from '../components/sections/ContactSection';
+import FAQ from '../components/sections/FAQ';
 import Head from 'next/head';
-import MembershipSection from '../components/MembershipSection';
-import OtherSection from '../components/OtherSection';
+import MembershipSection from '../components/sections/MembershipSection';
+import OtherSection from '../components/sections/OtherSection';
 import ParticleBackground from '../components/ParticleBackground';
 import React from 'react';
-import TriviaSection from '../components/TriviaSection';
+import TriviaSection from '../components/sections/TriviaSection';
+import CommunityPartnersSection from '../components/sections/CommunityPartnersSection';
 import particleStyles from '../styles/ParticleBackground.module.css';
 import styles from '../styles/Home.module.css';
+
 
 const Home: React.FC = () => {
   return (
@@ -25,6 +27,7 @@ const Home: React.FC = () => {
             <AboutSection />
             <MembershipSection />
             <TriviaSection />
+            <CommunityPartnersSection />
             <OtherSection />
             <FAQ />
             <ContactSection />

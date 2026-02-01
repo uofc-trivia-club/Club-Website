@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 
 import Image from 'next/image';
-import aboutStyles from '../styles/AboutSection.module.css';
-import styles from '../styles/Home.module.css';
+import aboutStyles from '../../styles/AboutSection.module.css';
+import styles from '../../styles/Home.module.css';
 
 const AboutSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);

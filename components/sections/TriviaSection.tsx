@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import styles from '../styles/Home.module.css';
-import triviaStyles from '../styles/TriviaSection.module.css';
+import styles from '../../styles/Home.module.css';
+import triviaStyles from '../../styles/TriviaSection.module.css';
 
 interface Question {
   questionText: string;
