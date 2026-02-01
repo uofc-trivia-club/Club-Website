@@ -118,31 +118,32 @@ const ContactSection: React.FC = () => {
           </p>
           <div className={contactStyles.socialLinks}>
 
-            <a href="https://www.instagram.com/trivia.ucalgary/" className={contactStyles.socialIconLink} aria-label="Instagram">
+            <a href="https://www.instagram.com/trivia.ucalgary/" target = "_blank" className={contactStyles.socialIconLink} aria-label="Instagram">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.instagram}`}>
                 <FontAwesomeIcon icon={faInstagram} className={contactStyles.socialIcon} />
               </div>
               <span>Instagram</span>
             </a>
-            <a href="https://discord.gg/sWmRgn9w2n" className={contactStyles.socialIconLink} aria-label="Discord">
+            <a href="https://discord.gg/sWmRgn9w2n" target = "_blank" className={contactStyles.socialIconLink} aria-label="Discord">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.discord}`}>
                 <FontAwesomeIcon icon={faDiscord} className={contactStyles.socialIcon} />
               </div>
               <span>Discord</span>
             </a>
-            <a href="https://github.com/uofc-trivia-club" className={contactStyles.socialIconLink} aria-label="GitHub">
+            <a href="https://github.com/uofc-trivia-club" target = "_blank" className={contactStyles.socialIconLink} aria-label="GitHub">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.github}`}>
                 <FontAwesomeIcon icon={faGithub} className={contactStyles.socialIcon} />
               </div>
               <span>GitHub</span>
             </a>
             {/* No tiktok account yet*/}
-            <a href="#" className={contactStyles.socialIconLink} aria-label="TikTok">
+            {/*<a href="#" className={contactStyles.socialIconLink} aria-label="TikTok">
               <div className={`${contactStyles.socialIconCircle} ${contactStyles.tiktok}`}>
                 <FontAwesomeIcon icon={faTiktok} className={contactStyles.socialIcon} />
               </div>
               <span>TikTok</span>
             </a>
+            */}
           </div>
         </div>
         
