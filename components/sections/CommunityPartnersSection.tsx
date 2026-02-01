@@ -102,7 +102,7 @@ const CommunityPartnersSection: React.FC = () => {
       {/* Royal Tea House Card */}
       <CommunityPartnerCard 
         title='Royal Tea House' 
-        imgSrc='/assets/partnerLogos/Royal_Tea_House_Logo_temp.jpg'
+        imgSrc='/assets/partnerLogos/RTH logo.png'
         imgAlt='Royal Tea House logo'
         discount='10% off'
         mapsLink='https://maps.app.goo.gl/26KpyGj2GrNpgxjs7'
