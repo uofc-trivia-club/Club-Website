@@ -11,6 +11,7 @@ import CommunityPartnersSection from '../components/sections/CommunityPartnersSe
 import particleStyles from '../styles/ParticleBackground.module.css';
 import styles from '../styles/Home.module.css';
 
+
 const Home: React.FC = () => {
   return (
     <div className={styles.container}>
