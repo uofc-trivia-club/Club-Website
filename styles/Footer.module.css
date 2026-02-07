@@ -1,22 +1,57 @@
 .footer {
   background-color: #222;
   color: #fff;
-  padding: 0.1rem;
-  text-align: center;
   width: 100%;
   margin-top: auto;
   position: relative;
   bottom: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom:15px;
+  flex-wrap:wrap;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1000px;
+  line-height:0.6em;
+  text-align:left;
 }
 
 .social {
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  padding-top:20px;
+}
+
+
+.branding{
+  text-align:center;
+  line-height:0.6em;
+}
+
+.icon{
+  background: transparent;
+  color:black;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.icon:hover{
+  color:white;
+}
+
+
+
+@media (max-width: 900px) {
+  .social{
+    display: none;
+  }
+
+  .container{
+    text-align:center;
+  }
 }
