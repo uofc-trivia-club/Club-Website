@@ -33,33 +33,29 @@ const AboutSection: React.FC = () => {
       <h2 className={styles.sectionTitle}>About Us</h2>
       <div className={aboutStyles.aboutContainer}>
         <div className={aboutStyles.aboutContent}>
-          <h3>Our Mission</h3>
+          <h3>The Big Idea</h3>
           <p>
-            Started officially in 2025 by a group of passionate trivia enthusiasts, the University of Calgary Trivia Club 
-            (UCTC) is where curiosity meets community. We're here to bring together students who love testing their knowledge, 
-            discovering new facts, and celebrating the thrill of trivia in all its forms.
+            Niche facts find a home at the University of Calgary Trivia Club (UCTC). If you're a walking encyclopedia or just here for the vibes, we bring students together to celebrate the thrill of the quest for knowledge. No topic is too niche; no fact is too small.
           </p>
           
-          <h3>What We Do</h3>
+          <h3>How We Play</h3>
           <p>
-            We host fun, engaging trivia events for all skill levels: from casual games where you can relax with friends, to semi-competitive 
-            matches for those who like a challenge. Whether you're into pop culture, history, science, or the completely random, 
-            you'll be sure to have fun.
+            UCTC hosts trivia for every speed. Whether you want a low pressure night to hang out with friends or a competitive match to flex your obscure knowledge, we've got you covered. Our categories span history, science, pop culture, and everything in between. No matter what you're into, you're in for a good time.
           </p>
 
           <h3>What We Promote</h3>
           <p>
-            At UCTC, it's not just about winning... 
+            At UCTC, winning is secondary... 
             <br></br>
-            It's about learning something new, making connections, and enjoying the process.
+            It's about learning something new, making connections, and the sheer satisfaction of using that one weird fact you've been sitting on for years.
           </p>
           
-          <p className={styles.listHeading}>We promote:</p>
+          <p className={styles.listHeading}>Why you'll love it here:</p>
           <ul className={styles.bulletList}>
             <li>A friendly, welcoming environment for all students</li>
-            <li>Collaboration and knowledge-sharing</li>
-            <li>School spirit with a Dino-sized roar</li>
-            <li>Opportunities to grow your skills and confidence</li>
+            <li>A room full of people who actually get your references</li>
+            <li>Unmatched Dino pride (and arguably better facts).</li>
+            <li>We’re all about sharing knowledge, not gatekeeping it.</li>
           </ul>
           
         </div>
