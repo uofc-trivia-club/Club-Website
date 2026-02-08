@@ -107,6 +107,14 @@ const CommunityPartnersSection: React.FC = () => {
         discount='10% off'
         mapsLink='https://maps.app.goo.gl/26KpyGj2GrNpgxjs7'
       />
+
+      {/* Good Earth Coffee Card */}
+      <CommunityPartnerCard
+        title='Good Earth Coffee'
+        imgSrc = '/assets/partnerLogos/Good_Earth_Logo.png'
+        imgAlt = 'Good Earth Coffee logo'
+        mapsLink='https://maps.app.goo.gl/gUJLvrKo8DhtHVmd7'
+      />
     </div>
 
     </section>
