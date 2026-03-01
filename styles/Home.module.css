@@ -159,3 +159,10 @@
   position: absolute;
   left: 0.5em;
 }
+
+.flexContainer{
+  display: flex;
+  gap: 8px; 
+  justify-content: center;
+  margin-top:40px;
+}
