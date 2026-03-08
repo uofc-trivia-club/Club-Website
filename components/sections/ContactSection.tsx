@@ -69,23 +69,11 @@ const ContactSection: React.FC = () => {
         },
         PUBLIC_KEY
       );
-
-      // 2. Send auto-reply to sender
-      await emailjs.send(
-        SERVICE_ID,
-        AUTO_REPLY_TEMPLATE_ID,
-        {
-          name: formData.name,
-          email: formData.email,
-          title: formData.subject,
-          message: formData.message,
-        },
-        PUBLIC_KEY
-      );
         
       setSubmitMessage('Thank you for your message! We will get back to you soon.');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
+       console.error('Email send error:', error);
       setSubmitMessage('There was an error sending your message. Please try again.');
     } finally {
       setIsSubmitting(false);
