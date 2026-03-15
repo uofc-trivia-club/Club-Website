@@ -1,0 +1,33 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .carousel-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .carouselBTN {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #d11616;
+    color: white;
+    border-radius: 5px;
+    padding:6px 6px 6px 6px;
+  }
+
+.layout{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.flexItem{
+  padding-top: 27px;
+}
