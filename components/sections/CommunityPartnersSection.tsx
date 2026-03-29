@@ -28,9 +28,13 @@ function CommunityPartnerCard({ title, imgSrc, imgAlt, discount = "", customText
             />
         </div>
 
-        {discount && <p className={partnerStyles.partnerText}>
+        {discount ? (
+          <p className={partnerStyles.partnerText}>
           Get <span style={{ fontWeight: 'bold' }}>{discount}</span> when you show your membership card.
-        </p>}
+        </p>
+        ) : (
+          <div style = {{height: "68.5px"}} />
+        )}
         {customText && <p className={partnerStyles.partnerText}>
           {customText}
         </p>}
