@@ -55,6 +55,11 @@ const OtherSection: React.FC = () => {
       description: "Implement our Discord bot to track scores and manage daily trivia competitions for your server." 
     },
     { 
+      name: "Software Projects", 
+      path: "/software-projects", 
+      description: "Take a closer look at the projects built by our software team." 
+    },
+    { 
       name: "Sponsorship", 
       path: "/members", 
       description: "Partner with us to support trivia competitions and events while gaining visibility within our community." 
