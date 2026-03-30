@@ -15,7 +15,7 @@ const softwareProjects = [
       Yippee! is an ambitious, campus-scale trivia platform designed to rival and surpass existing commercial solutions such as Kahoot,
       while remaining completely free and student-driven.\n
       The system enables University of Calgary students to create, host, and participate in live trivia games during weekly and monthly club events, lectures, and social gatherings.
-      Unlike commercial trivia platforms that restrict features behind paywalls, 
+      Unlike commercial trivia platforms that restrict features behind paywalls,
       Yippee! aims to democratize interactive learning and entertainment by offering advanced functionality.\n
       Those include: richer analytics, flexible quiz formats, persistent scoring, and community-driven customization at no cost. 
       The long-term vision is to establish Yippee! as a flagship digital platform for student engagement at the University of Calgary, 
@@ -61,11 +61,10 @@ const SoftwareProjectsPage: NextPageWithLayout = () => {
       <div className={styles.pageContent}>
         <h2 className={styles.contentHeading}>Software Projects</h2>
         <p className={styles.contentParagraph}>
-          Explore software projects from our club.
+          Explore software projects from our club.<br />Click on a project to check it out for yourself
         </p>
 
-        {/*TODO css*/}
-        <div className={styles.softwareProjectsContainer}>
+        <div>
           {softwareProjects.map((project, index) => (
             <SoftwareProjectCard
               key={index}

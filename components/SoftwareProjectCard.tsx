@@ -19,11 +19,9 @@ export default function SoftwareProjectCard({
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <div className={styles.extendedWrap}>
-        <div className={styles.extendedInner}>
           <p className={styles.extendedDescription}>
             {extendedDescription}
           </p>
-        </div>
       </div>
     </div>
   );
