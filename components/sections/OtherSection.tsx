@@ -56,7 +56,7 @@ const OtherSection: React.FC = () => {
     },
     { 
       name: "Software Projects", 
-      path: "/software-projects", 
+      path: "/softwareProjects", 
       description: "Take a closer look at the projects built by our software team." 
     },
     { 
