@@ -51,23 +51,23 @@ const NewsletterPage: React.FC = () => {
             >
               {year === "2026" && (
                 <>
-                  <option value ="dec">December</option>
-                  <option value ="nov">November</option>
-                  <option value ="oct">October</option>
-                  <option value ="sept">September</option>
+                  <option value ="december">December</option>
+                  <option value ="november">November</option>
+                  <option value ="october">October</option>
+                  <option value ="september">September</option>
                   <option value="april">April</option>
-                  <option value="mar">March</option>
-                  <option value="feb">February</option>
-                  <option value="jan">January</option>
+                  <option value="march">March</option>
+                  <option value="febuary">February</option>
+                  <option value="january">January</option>
                 </>
               )}
 
               {year === "2025" && (
                 <>
-                  <option value ="dec">December</option>
-                  <option value ="nov">November</option>
-                  <option value ="oct">October</option>
-                  <option value ="sept">September</option>
+                  <option value ="december">December</option>
+                  <option value ="november">November</option>
+                  <option value ="october">October</option>
+                  <option value ="september">September</option>
                 </>
               )}
             </select>
@@ -89,7 +89,7 @@ const NewsletterPage: React.FC = () => {
                 <Image src="/assets/Newsletter Pages/Mar 2026 Page 3.png" alt="" width={720} height={720} />
               </>
             )}
-            {year === "2026" && month === "feb" && (
+            {year === "2026" && month === "febuary" && (
               <>
                 <Image src="/assets/Newsletter Pages/Feb 2026 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/Feb 2026 Page 2.png" alt="" width={720} height={720} />
@@ -98,7 +98,7 @@ const NewsletterPage: React.FC = () => {
             )}
 
 
-            {year === "2026" && month === "jan" && (
+            {year === "2026" && month === "january" && (
               <>
                 <Image src="/assets/Newsletter Pages/January 2026 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/January 2026 Page 2.png" alt="" width={720} height={720} />
@@ -106,7 +106,7 @@ const NewsletterPage: React.FC = () => {
                 <Image src="/assets/Newsletter Pages/January 2026 Page 4.png" alt="" width={720} height={720} />
               </>
             )}
-            {year === "2025" && month === "dec" && (
+            {year === "2025" && month === "december" && (
               <>
                 <Image src="/assets/Newsletter Pages/December 2025 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/December 2025 Page 2.png" alt="" width={720} height={720} />
@@ -115,7 +115,7 @@ const NewsletterPage: React.FC = () => {
             )}
 
 
-            {year === "2025" && month === "nov" && (
+            {year === "2025" && month === "november" && (
               <>
                 <Image src="/assets/Newsletter Pages/November 2025 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/November 2025 Page 2.png" alt="" width={720} height={720} />
@@ -124,7 +124,7 @@ const NewsletterPage: React.FC = () => {
             )}
 
 
-            {year === "2025" && month === "oct" && (
+            {year === "2025" && month === "october" && (
               <>
                 <Image src="/assets/Newsletter Pages/October 2025 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/October 2025 Page 2.png" alt="" width={720} height={720} />
@@ -134,7 +134,7 @@ const NewsletterPage: React.FC = () => {
             )}
 
 
-            {year === "2025" && month === "sept" && (
+            {year === "2025" && month === "september" && (
               <>
                 <Image src="/assets/Newsletter Pages/September 2025 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/September 2025 Page 2.png" alt="" width={720} height={720} />
