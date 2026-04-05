@@ -5,12 +5,23 @@
   flex-wrap: wrap;
 }
 
+.activeButton {
+  background-color:rgb(223, 14, 14);
+}
+.newsletter {
+  padding: 3rem;
+  background-color: #f5f5f5;
+  border-radius: px;
+  text-align: center;
+  margin: 2rem 0;
+  border: 1px dashed #ffffff;
+}
 
-.newsletterButton {
+.dropdown {
   background-color:rgb(223, 14, 14);
   color: white;
   font-family: "Times New Roman", Times, serif;
-  padding: 7px 7px;
+  padding: 5px 10px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -18,20 +29,8 @@
 }
 
 
-.newsletterButton:hover {
-  background-color:rgb(223, 14, 14);
-  transform: translateY(-1px);
-}
-
-
-.activeButton {
-  background-color:rgb(223, 14, 14);
-}
-.newsletter {
-  padding: 3rem;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  text-align: center;
-  margin: 2rem 0;
-  border: 1px dashed #ccc;
+.dropdown:hover {
+  background-color: rgb(179, 18, 18);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }

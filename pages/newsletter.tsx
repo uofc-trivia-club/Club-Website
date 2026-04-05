@@ -9,7 +9,8 @@ import { useState } from "react";
 
 
 const NewsletterPage: React.FC = () => {
-  const [selected, setSelected] = useState("april-2026");
+  const [year, setYear] = useState("2026");
+  const [month, setMonth] = useState("april");
   return (
 
 
@@ -28,79 +29,67 @@ const NewsletterPage: React.FC = () => {
             Stay updated with our latest trivia insights, club updates, and community content.
           </p>
           <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
-            <button
-              className = {`${btnStyles.newsletterButton} ${selected === "april-2026" ? styles.activeButton : ""}`}
-              onClick={() => setSelected("april-2026")}>
-              April 2026
-            </button>
+            
+            {/* Year */}
+            <select
+              value={year}
+              onChange={(e) => {
+                setYear(e.target.value);
+                setMonth(""); // reset month when year changes
+              }}
+              className={btnStyles.dropdown}
+            >
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+            </select>
 
+            {/* Month */}
+            <select
+              value={month}
+              onChange={(e) => setMonth(e.target.value)}
+              className={btnStyles.dropdown}
+            >
+              {year === "2026" && (
+                <>
+                  <option value ="dec">December</option>
+                  <option value ="nov">November</option>
+                  <option value ="oct">October</option>
+                  <option value ="sept">September</option>
+                  <option value="april">April</option>
+                  <option value="mar">March</option>
+                  <option value="feb">February</option>
+                  <option value="jan">January</option>
+                </>
+              )}
 
-            <button
-              className = {`${btnStyles.newsletterButton} ${selected === "mar-2026" ? styles.activeButton : ""}`}
-              onClick={() => setSelected("mar-2026")}>
-              March 2026
-            </button>
+              {year === "2025" && (
+                <>
+                  <option value ="dec">December</option>
+                  <option value ="nov">November</option>
+                  <option value ="oct">October</option>
+                  <option value ="sept">September</option>
+                </>
+              )}
+            </select>
 
+          </div>          
 
-            <button
-              className = {`${btnStyles.newsletterButton} ${selected === "feb-2026" ? styles.activeButton : ""}`}
-              onClick={() => setSelected("feb-2026")}>
-              Febuary 2026
-            </button>
-
-
-            <button
-              className = {`${btnStyles.newsletterButton} ${selected === "jan-2026" ? styles.activeButton : ""}`}
-              onClick={() => setSelected("jan-2026")}>
-              January 2026
-            </button>
-
-
-            <button
-              className = {`${btnStyles.newsletterButton} ${selected === "dec-2025" ? styles.activeButton : ""}`}
-              onClick={() => setSelected("dec-2025")}>
-              December 2025
-            </button>
-
-
-            <button
-              className = {`${btnStyles.newsletterButton} ${selected === "nov-2025" ? styles.activeButton : ""}`}
-              onClick={() => setSelected("nov-2025")}>
-              November 2025
-            </button>
-
-
-            <button
-              className = {`${btnStyles.newsletterButton} ${selected === "oct-2025" ? styles.activeButton : ""}`}
-              onClick={() => setSelected("oct-2025")}>
-              October 2025
-            </button>
-
-
-            <button
-              className = {`${btnStyles.newsletterButton} ${selected === "sept-2025" ? styles.activeButton : ""}`}
-              onClick={() => setSelected("sept-2025")}>
-              September 2025
-            </button>
-
-
-          </div>
-          <div className={styles.placeholder}>
-            {selected === "april-2026" && (
+          <div className={btnStyles.newsletter}>
+            {year === "2026" && month === "april" && (
               <>
                 <Image src="/assets/Newsletter Pages/April 2026 Page 1.jpg" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/Apr 2026 Page 2.jpg" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/Apr 2026 Page 3.jpg" alt="" width={720} height={720} />
               </>
             )}
-            {selected === "mar-2026" && (
+            {year === "2026" && month === "march" && (
               <>
                 <Image src="/assets/Newsletter Pages/Mar 2026 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/Mar 2026 Page 2.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/Mar 2026 Page 3.png" alt="" width={720} height={720} />
               </>
             )}
-            {selected === "feb-2026" && (
+            {year === "2026" && month === "feb" && (
               <>
                 <Image src="/assets/Newsletter Pages/Feb 2026 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/Feb 2026 Page 2.png" alt="" width={720} height={720} />
@@ -109,7 +98,7 @@ const NewsletterPage: React.FC = () => {
             )}
 
 
-            {selected === "jan-2026" && (
+            {year === "2026" && month === "jan" && (
               <>
                 <Image src="/assets/Newsletter Pages/January 2026 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/January 2026 Page 2.png" alt="" width={720} height={720} />
@@ -117,7 +106,7 @@ const NewsletterPage: React.FC = () => {
                 <Image src="/assets/Newsletter Pages/January 2026 Page 4.png" alt="" width={720} height={720} />
               </>
             )}
-            {selected === "dec-2025" && (
+            {year === "2025" && month === "dec" && (
               <>
                 <Image src="/assets/Newsletter Pages/December 2025 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/December 2025 Page 2.png" alt="" width={720} height={720} />
@@ -126,7 +115,7 @@ const NewsletterPage: React.FC = () => {
             )}
 
 
-            {selected === "nov-2025" && (
+            {year === "2025" && month === "nov" && (
               <>
                 <Image src="/assets/Newsletter Pages/November 2025 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/November 2025 Page 2.png" alt="" width={720} height={720} />
@@ -135,7 +124,7 @@ const NewsletterPage: React.FC = () => {
             )}
 
 
-            {selected === "oct-2025" && (
+            {year === "2025" && month === "oct" && (
               <>
                 <Image src="/assets/Newsletter Pages/October 2025 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/October 2025 Page 2.png" alt="" width={720} height={720} />
@@ -145,7 +134,7 @@ const NewsletterPage: React.FC = () => {
             )}
 
 
-            {selected === "sept-2025" && (
+            {year === "2025" && month === "sept" && (
               <>
                 <Image src="/assets/Newsletter Pages/September 2025 Page 1.png" alt="" width={720} height={720} />
                 <Image src="/assets/Newsletter Pages/September 2025 Page 2.png" alt="" width={720} height={720} />
@@ -163,3 +152,4 @@ const NewsletterPage: React.FC = () => {
 
 
 export default NewsletterPage;
+ 
