@@ -145,16 +145,24 @@ const MembershipSection: React.FC = () => {
       </div>
       
       {/* Current Members Section */}
-      <div style={{ textAlign: 'center', marginTop: '50px' }}>
-        <h2>Current Members</h2>
-        <p>Meet the team behind our UCalgary Trivia community</p>
-        <div style={{ marginTop: '20px' }}>
-          <Link href="/members">
-            <button className={styles.primaryButton}>
-              Learn More About Our Executive Team Members!
-            </button>
-          </Link>
-        </div>
+      
+      <div style={{ textAlign: 'center', marginTop: '50px', lineHeight: '0.5rem'}}>
+          <h2>Current Members</h2>
+          <p>Meet the team behind our UCalgary Trivia community</p>
+         
+      <div className={styles.flexContainer}>
+              <Link href="/members">
+                <button className={styles.primaryButton}>
+                  Learn More About Our Executive Team Members!
+                </button>
+              </Link>
+              
+              <Link href='/softwareMembers'>
+                <button className={styles.primaryButton}>
+                  Learn More About Our Software Team Members!
+                </button>
+              </Link>
+            </div>
       </div>
     </section>
   );
