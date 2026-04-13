@@ -73,9 +73,9 @@ const NewsletterPage: React.FC = () => {
           <div className={btnStyles.newsletter}>
             {year === "2026" && month === "april" && (
               <>
-                <Image src="/assets/Newsletter Pages/April 2026 Page 1.jpg" alt="" width={720} height={720} />
-                <Image src="/assets/Newsletter Pages/Apr 2026 Page 2.jpg" alt="" width={720} height={720} />
-                <Image src="/assets/Newsletter Pages/Apr 2026 Page 3.jpg" alt="" width={720} height={720} />
+                <Image src="/assets/Newsletter Pages/April 2026 Page 1.png" alt="" width={720} height={720} />
+                <Image src="/assets/Newsletter Pages/Apr 2026 Page 2.png" alt="" width={720} height={720} />
+                <Image src="/assets/Newsletter Pages/Apr 2026 Page 3.png" alt="" width={720} height={720} />
               </>
             )}
             {year === "2026" && month === "march" && (
