@@ -51,10 +51,6 @@ const NewsletterPage: React.FC = () => {
             >
               {year === "2026" && (
                 <>
-                  <option value ="december">December</option>
-                  <option value ="november">November</option>
-                  <option value ="october">October</option>
-                  <option value ="september">September</option>
                   <option value="april">April</option>
                   <option value="march">March</option>
                   <option value="febuary">February</option>
