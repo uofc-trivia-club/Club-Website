@@ -53,9 +53,7 @@ const ContactSection: React.FC = () => {
     try {
       const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
       const CONTACT_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID as string;
-      const AUTO_REPLY_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_AUTO_REPLY_TEMPLATE_ID as string;
       const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
-
 
       // 1. Send to Club email
       await emailjs.send(
@@ -65,19 +63,6 @@ const ContactSection: React.FC = () => {
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
-          message: formData.message,
-        },
-        PUBLIC_KEY
-      );
-
-      // 2. Send auto-reply to sender
-      await emailjs.send(
-        SERVICE_ID,
-        AUTO_REPLY_TEMPLATE_ID,
-        {
-          name: formData.name,
-          email: formData.email,
-          title: formData.subject,
           message: formData.message,
         },
         PUBLIC_KEY
@@ -103,7 +88,7 @@ const ContactSection: React.FC = () => {
           
           <div className={contactStyles.contactDetail}>
             <i className={contactStyles.icon}>📧</i>
-            <p>trebeksrejects@gmail.com</p>
+            <p>triviaucalgary@gmail.com</p>
           </div>
           
           <div className={contactStyles.contactDetail}>
