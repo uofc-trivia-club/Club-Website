@@ -28,9 +28,13 @@ function CommunityPartnerCard({ title, imgSrc, imgAlt, discount = "", customText
             />
         </div>
 
-        {discount && <p className={partnerStyles.partnerText}>
+        {discount ? (
+          <p className={partnerStyles.partnerText}>
           Get <span style={{ fontWeight: 'bold' }}>{discount}</span> when you show your membership card.
-        </p>}
+        </p>
+        ) : (
+          <div style = {{height: "68.5px"}} />
+        )}
         {customText && <p className={partnerStyles.partnerText}>
           {customText}
         </p>}
@@ -106,6 +110,14 @@ const CommunityPartnersSection: React.FC = () => {
         imgAlt='Royal Tea House logo'
         discount='10% off'
         mapsLink='https://maps.app.goo.gl/26KpyGj2GrNpgxjs7'
+      />
+
+      {/* Good Earth Coffee Card */}
+      <CommunityPartnerCard
+        title='Good Earth Coffee'
+        imgSrc = '/assets/partnerLogos/Good_Earth_Logo.png'
+        imgAlt = 'Good Earth Coffee logo'
+        mapsLink='https://maps.app.goo.gl/gUJLvrKo8DhtHVmd7'
       />
     </div>
 
