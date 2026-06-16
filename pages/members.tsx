@@ -1,7 +1,8 @@
+import React, { useState } from 'react';
+
 import Footer from '../components/Footer';
 import Head from 'next/head';
 import Image from 'next/image';
-import React from 'react';
 import SubpageHeader from '../components/SubpageHeader';
 import memberStyles from '../styles/MembershipSection.module.css';
 import styles from '../styles/SubpageLayout.module.css';
@@ -13,8 +14,12 @@ interface Member {
   bio?: string;
 }
 
+type TabType = 'executive' | 'software' | 'past';
+
 const MembersPage: React.FC = () => {
-  const currentMembers: Member[] = [
+  const [activeTab, setActiveTab] = useState<TabType>('executive');
+
+  const executiveMembers: Member[] = [
     {
       name: "Chloe",
       position: "President",
@@ -101,6 +106,61 @@ const MembersPage: React.FC = () => {
     }
   ];
 
+  const softwareTeamMembers: Member[] = [
+    {
+      name: "Chloe",
+      position: "Software Lead",
+      imageUrl: "/assets/chloe.png",
+      bio: "I made a trivia club because I love trivia so much! 🤩🤩🤩"
+    },
+    {
+      name: "Agastya Parashar",
+      position: "Software Developer",
+      imageUrl: "/assets/agastya.jpg",
+      bio: "I am Agastya, a first year engineering student and an aspiring software engineer! I enjoy trivia and love learning about random obscure facts. Outside of that I enjoy programming, reading novels, playing all kinds of sports as well as video games."
+    },
+    {
+      name: "Saihaan",
+      position: "Software Developer",
+      imageUrl: "/assets/saihaan.jpg",
+      bio: "Hello! My name is Saihaan and I'm a 2nd year CS student!"
+    },
+    {
+      name: "Sofi Tapias",
+      position: "Software Developer",
+      imageUrl: "/assets/sofi.png",
+      bio: "Hey! I'm Sofi :) I'm software engineering student currently on internship. I love Bingo and trivia!!!"
+    },
+    {
+      name: "Abdel",
+      position: "Software Developer",
+      imageUrl: "/assets/abdel.jpg",
+      bio: "Hi, I'm Abdel (Abdelrahman). I'm a second-year software engineering student, and I like game development"
+    }
+  ];
+
+  const pastMembers: Member[] = [
+    {
+      name: "Past Member 1", 
+      position: "Former Position",
+      imageUrl: "/assets/past1.png",
+      bio: "Add your past members here"
+    }
+  ];
+
+  const getDisplayMembers = () => {
+    switch(activeTab) {
+      case 'executive':
+        return executiveMembers;
+      case 'software':
+        return softwareTeamMembers;
+      case 'past':
+        return pastMembers;
+      default:
+        return executiveMembers;
+    }
+  };
+
   return (
     <div className={styles.pageContainer}>
       <Head>
@@ -115,9 +175,61 @@ const MembersPage: React.FC = () => {
           <p style={{ textAlign: 'center', marginBottom: '2rem' }}>
             Meet the dedicated team leading UC Trivia Club and organizing our events and competitions.
           </p>
+
+          {/* Tab Navigation */}
+          <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button
+              onClick={() => setActiveTab('executive')}
+              style={{
+                padding: '0.75rem 1.5rem',
+                borderRadius: '0.5rem',
+                border: 'none',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '1rem',
+                backgroundColor: activeTab === 'executive' ? '#c4302b' : '#e0e0e0',
+                color: activeTab === 'executive' ? 'white' : '#333',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Executive Team
+            </button>
+            <button
+              onClick={() => setActiveTab('software')}
+              style={{
+                padding: '0.75rem 1.5rem',
+                borderRadius: '0.5rem',
+                border: 'none',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '1rem',
+                backgroundColor: activeTab === 'software' ? '#c4302b' : '#e0e0e0',
+                color: activeTab === 'software' ? 'white' : '#333',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Software Team
+            </button>
+            <button
+              onClick={() => setActiveTab('past')}
+              style={{
+                padding: '0.75rem 1.5rem',
+                borderRadius: '0.5rem',
+                border: 'none',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '1rem',
+                backgroundColor: activeTab === 'past' ? '#c4302b' : '#e0e0e0',
+                color: activeTab === 'past' ? 'white' : '#333',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Past Members
+            </button>
+          </div>
           
           <div className={memberStyles.membersContainer}>
-            {currentMembers.map((member, index) => (
+            {getDisplayMembers().map((member, index) => (
               <div key={index} className={memberStyles.memberCard}>
                 <div className={memberStyles.memberImageContainer}>
                   {member.imageUrl ? (

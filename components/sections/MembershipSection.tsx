@@ -153,13 +153,7 @@ const MembershipSection: React.FC = () => {
       <div className={styles.flexContainer}>
               <Link href="/members">
                 <button className={styles.primaryButton}>
-                  Learn More About Our Executive Team Members!
-                </button>
-              </Link>
-              
-              <Link href='/softwareMembers'>
-                <button className={styles.primaryButton}>
-                  Learn More About Our Software Team Members!
+                  Learn More About Our Club's Team Members!
                 </button>
               </Link>
             </div>
