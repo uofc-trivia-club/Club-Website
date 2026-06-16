@@ -61,7 +61,7 @@ const OtherSection: React.FC = () => {
     },
     { 
       name: "Sponsorship", 
-      path: "/members", 
+      path: "/sponsorship", 
       description: "Partner with us to support trivia competitions and events while gaining visibility within our community." 
     },
     { 

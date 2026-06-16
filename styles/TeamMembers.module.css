@@ -1,0 +1,52 @@
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tabButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #e0e0e0;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.tabButton:hover {
+  transform: translateY(-2px);
+}
+
+.active {
+  background-color: #c4302b;
+  color: #fff;
+}
+
+.memberMeta {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.pastImage {
+  filter: grayscale(60%);
+  opacity: 0.85;
+}
+
+.roleGroup {
+  margin-bottom: 2.5rem;
+}
+
+.roleTitle {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #222;
+}
+

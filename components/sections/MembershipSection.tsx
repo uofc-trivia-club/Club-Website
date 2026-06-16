@@ -151,7 +151,7 @@ const MembershipSection: React.FC = () => {
           <p>Meet the team behind our UCalgary Trivia community</p>
          
       <div className={styles.flexContainer}>
-              <Link href="/members">
+              <Link href="/teamMembers">
                 <button className={styles.primaryButton}>
                   Learn More About Our Club's Team Members!
                 </button>
