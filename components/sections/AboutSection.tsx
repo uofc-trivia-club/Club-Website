@@ -32,42 +32,47 @@ const AboutSection: React.FC = () => {
     <section id="about" ref={sectionRef} className={`${styles.section} ${aboutStyles.aboutSection}`}>
       <h2 className={styles.sectionTitle}>About Us</h2>
       <div className={aboutStyles.aboutContainer}>
-        <div className={aboutStyles.aboutContent}>
-          <h3>The Big Idea</h3>
-          <p>
-            Niche facts find a home at the University of Calgary Trivia Club (UCTC). If you're a walking encyclopedia or just here for the vibes, we bring students together to celebrate the thrill of the quest for knowledge. No topic is too niche; no fact is too small.
-          </p>
-          
-          <h3>How We Play</h3>
-          <p>
-            UCTC hosts trivia for every speed. Whether you want a low pressure night to hang out with friends or a competitive match to flex your obscure knowledge, we've got you covered. Our categories span history, science, pop culture, and everything in between. No matter what you're into, you're in for a good time.
-          </p>
-
-          <h3>What We Promote</h3>
-          <p>
-            At UCTC, winning is secondary... 
-            <br></br>
-            It's about learning something new, making connections, and the sheer satisfaction of using that one weird fact you've been sitting on for years.
-          </p>
-          
-          <p className={styles.listHeading}>Why you'll love it here:</p>
-          <ul className={styles.bulletList}>
-            <li>A friendly, welcoming environment for all students</li>
-            <li>A room full of people who actually get your references</li>
-            <li>Unmatched Dino pride (and arguably better facts).</li>
-            <li>We’re all about sharing knowledge, not gatekeeping it.</li>
-          </ul>
-          
-        </div>
         <div className={aboutStyles.aboutImage}>
           <Image 
             src="/assets/RexTriviaMascot.png"
             alt="Rex - Trivia Club Mascot" 
-            width={300}
-            height={300}
+            width={320}
+            height={320}
             className={aboutStyles.mascotImage}
             priority
           />
+        </div>
+
+        <div className={aboutStyles.rowBlock}>
+          <span className={aboutStyles.kicker}>For UCalgary students who love trivia</span>
+          <h3>Hey there! Are you a UCalgary student who loves trivia? Then we have a club for you!</h3>
+          <p>
+            UCTC is a student-led club at the University of Calgary where trivia fans can gather, compete, and discover new facts together.
+          </p>
+        </div>
+
+        <div className={aboutStyles.rowBlock}>
+          <h3>Who are we?</h3>
+          <p>
+            We are a student-led club at the University of Calgary who hosts monthly events based off a variety of trivia game shows and a variety of different trivia topics.
+          </p>
+        </div>
+
+        <div className={aboutStyles.rowBlock}>
+          <h3>What to expect</h3>
+          <p>
+            From relaxed socials to competitive nights, our events are built for every kind of trivia player.
+          </p>
+        </div>
+
+        <div className={aboutStyles.rowBlock}>
+          <h3>Why you'll love it</h3>
+          <ul className={styles.bulletList}>
+            <li>A friendly, welcoming environment for all students</li>
+            <li>A room full of people who actually get your references</li>
+            <li>Big Dino pride and even bigger trivia energy</li>
+            <li>We share knowledge, not gatekeep it</li>
+          </ul>
         </div>
       </div>
     </section>
