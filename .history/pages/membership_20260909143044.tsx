@@ -66,7 +66,7 @@ const MembershipPage: React.FC = () => {
             <p className="mb-4">
               Are you a business owner or organization interested in partnering with UC Trivia Club? 
               We'd love to hear from you! Sponsorship opportunities help support our events and competitions 
-              while providing your business with visibility within our engaged student community.
+              while giving your business visibility within our engaged student community.
             </p>
             <div className="space-y-3">
               <p className="font-semibold">Benefits for sponsors include:</p>
