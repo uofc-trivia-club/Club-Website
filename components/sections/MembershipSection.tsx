@@ -131,7 +131,7 @@ const MembershipSection: React.FC = () => {
             </div>
             <div className={memberStyles.buttonContainer}>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfHysr_-Xoq7PYJu9mE-XCbAFjmfdqs9rJsFJ8Rdn1WK2cCQQ/viewform?usp=dialog"
+                href="https://forms.gle/a85y2eXnFUAkAs42A"
                 target="_blank"
                 rel="noopener noreferrer"
               >
